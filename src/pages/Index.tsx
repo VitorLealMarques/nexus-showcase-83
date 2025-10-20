@@ -1,12 +1,47 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+/**
+ * PÁGINA PRINCIPAL
+ * 
+ * Esta é a estrutura principal do site.
+ * Os componentes são organizados na ordem de exibição:
+ * 1. Header (navegação fixa no topo)
+ * 2. Carousel (carrossel hero na página inicial)
+ * 3. Services (seção de serviços)
+ * 4. Contact (seção de contato)
+ * 5. Footer (rodapé)
+ * 6. FloatingWhatsApp (botão fixo flutuante)
+ * 
+ * Para personalizar o conteúdo, edite o arquivo src/config/constants.ts
+ */
+
+import { Header } from "@/components/Header";
+import { Carousel } from "@/components/Carousel";
+import { Services } from "@/components/Services";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen">
+      {/* Navegação fixa no topo */}
+      <Header />
+      
+      {/* Seção Hero com Carrossel */}
+      <div id="home">
+        <Carousel />
       </div>
+      
+      {/* Seção de Serviços/Destaques */}
+      <Services />
+      
+      {/* Seção de Contato */}
+      <Contact />
+      
+      {/* Rodapé */}
+      <Footer />
+      
+      {/* Botão flutuante do WhatsApp */}
+      <FloatingWhatsApp />
     </div>
   );
 };
