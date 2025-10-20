@@ -110,3 +110,27 @@ export const CAROUSEL_CONFIG = {
   // TROCAR: Ativar/desativar transição automática
   autoPlay: true,
 };
+
+// ====== SEÇÃO SOBRE NÓS ======
+export const ABOUT_US = {
+  // TROCAR: Título da seção
+  title: "Sobre Nós",
+  
+  // TROCAR: Parágrafos de texto (adicione ou remova parágrafos conforme necessário)
+  paragraphs: [
+    "Somos uma empresa dedicada a oferecer as melhores soluções para nossos clientes. Nossa missão é transformar experiências através de serviços de qualidade e atendimento personalizado.",
+    "Com anos de experiência no mercado, construímos uma reputação baseada em confiança, profissionalismo e resultados excepcionais. Cada projeto é tratado com dedicação e atenção aos detalhes.",
+  ],
+  
+  // TROCAR: URL da imagem (foto da equipe ou do local)
+  imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+  
+  // TROCAR: Texto alternativo da imagem (para acessibilidade)
+  imageAlt: "Nossa equipe trabalhando em conjunto",
+  
+  // TROCAR: Texto do botão de ação
+  buttonText: "Agende Agora",
+  
+  // TROCAR: Nome de usuário do Instagram (deixe vazio para ocultar)
+  instagramHandle: "@seunegocio",
+};

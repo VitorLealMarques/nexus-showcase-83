@@ -15,6 +15,7 @@
 
 import { Header } from "@/components/Header";
 import { Carousel } from "@/components/Carousel";
+import { AboutUs } from "@/components/AboutUs";
 import { Services } from "@/components/Services";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
@@ -30,6 +31,9 @@ const Index = () => {
       <div id="home">
         <Carousel />
       </div>
+      
+      {/* Seção Sobre Nós */}
+      <AboutUs />
       
       {/* Seção de Serviços/Destaques */}
       <Services />
